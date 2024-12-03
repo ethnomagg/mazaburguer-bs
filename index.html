@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Bienvenido a MazaBurguer, la mejor hamburguesería gourmet en Mazagón. ¡Conócenos!">
+	<title>MazaBurguer</title>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap"
+		rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+	<div class="overlay"></div>
+	<nav class="navbar navbar-expand-lg fixed-top">
+		<div class="container">
+			<a class="navbar-brand" href="#portada">
+				<img src="img/logo.svg" alt="Logo" height="60">
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<div class="mobile-controls">
+					<div class="lang-switcher">
+						<img src="img/EN.svg" alt="EN" class="language-icon current-lang-icon" data-lang="en">
+						<img src="img/ES.svg" alt="ES" class="language-icon lang-icon" data-lang="es" style="display: none;">
+					</div>
+					<div class="search">
+						<img src="img/search-icon.svg" alt="Search" class="search-icon-img">
+					</div>
+				</div>
+				<ul class="navbar-nav mx-auto">
+					<li class="nav-item">
+						<a class="nav-link es" href="#portada">Inicio</a>
+						<a class="nav-link en d-none" href="#portada">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link es" href="#para-picar">Para Picar</a>
+						<a class="nav-link en d-none" href="#para-picar">Starters</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link es" href="#contacto">Contacto</a>
+						<a class="nav-link en d-none" href="#contacto">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<section id="portada" class="min-vh-100 d-flex align-items-center">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-12 col-lg-6 mb-4 mb-lg-0">
+					<!-- Carrusel -->
+					<div class="burger-wrapper">
+						<div id="carouselHamburguesas" class="carousel slide" data-bs-ride="carousel">
+							<div class="carousel-container">
+								<!-- Indicadores -->
+								<div class="carousel-indicators">
+									<button type="button" data-bs-target="#carouselHamburguesas" data-bs-slide-to="0"
+										class="active"></button>
+									<button type="button" data-bs-target="#carouselHamburguesas" data-bs-slide-to="1"></button>
+									<button type="button" data-bs-target="#carouselHamburguesas" data-bs-slide-to="2"></button>
+									<button type="button" data-bs-target="#carouselHamburguesas" data-bs-slide-to="3"></button>
+									<button type="button" data-bs-target="#carouselHamburguesas" data-bs-slide-to="4"></button>
+									<button type="button" data-bs-target="#carouselHamburguesas" data-bs-slide-to="5"></button>
+								</div>
+
+								<!-- Slides -->
+								<div class="carousel-inner rounded-3 shadow">
+									<div class="carousel-item active">
+										<img src="img/hamburguesas/hambClasica.jpg" class="d-block w-100"
+											alt="Hamburguesa Clásica">
+									</div>
+									<div class="carousel-item">
+										<img src="img/hamburguesas/hambBBQ.jpg" class="d-block w-100" alt="Hamburguesa BBQ">
+									</div>
+									<div class="carousel-item">
+										<img src="img/hamburguesas/hambVegana.jpg" class="d-block w-100" alt="Hamburguesa Vegana">
+									</div>
+									<div class="carousel-item">
+										<img src="img/hamburguesas/hambPicante.jpg" class="d-block w-100"
+											alt="Hamburguesa Picante">
+									</div>
+									<div class="carousel-item">
+										<img src="img/hamburguesas/hambHawaiana.jpg" class="d-block w-100"
+											alt="Hamburguesa Hawaiana">
+									</div>
+									<div class="carousel-item">
+										<img src="img/hamburguesas/hambDoble.jpg" class="d-block w-100" alt="Hamburguesa Doble">
+									</div>
+								</div>
+
+								<!-- Controles -->
+								<button class="carousel-control-prev" type="button" data-bs-target="#carouselHamburguesas"
+									data-bs-slide="prev">
+									<span class="carousel-control-prev-icon"></span>
+									<span class="visually-hidden">Anterior</span>
+								</button>
+								<button class="carousel-control-next" type="button" data-bs-target="#carouselHamburguesas"
+									data-bs-slide="next">
+									<span class="carousel-control-next-icon"></span>
+									<span class="visually-hidden">Siguiente</span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">
+					<!-- Contenido -->
+					<div class="portada-content text-center text-lg-start">
+						<h1 class="es">¡Las Mejores Hamburguesas Gourmet en <span>Mazagón</span>!</h1>
+						<h1 class="en" style="display: none;">The Best Gourmet Burgers in <span>Mazagón</span>!</h1>
+						<p class="es call-to-action">Descubre nuestros platos únicos y ven a visitarnos</p>
+						<p class="en call-to-action" style="display: none;">Discover our unique dishes and come visit us</p>
+						<a href="#para-picar" class="btn es">Ver Menú</a>
+						<a href="#para-picar" class="btn en" style="display: none;">See Menu</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="para-picar" class="py-5">
+		<div class="container">
+			<h2 class="text-center mb-4">Para Picar</h2>
+			<!-- Оновлено класи для адаптивної сітки -->
+			<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+				<div class="col">
+					<div class="card h-100">
+						<img src="img/entrantes/patabaBrava.jpg" class="card-img-top" alt="Patatas Bravas">
+						<div class="card-body">
+							<h3 class="card-title es">Patatas Bravas</h3>
+							<h3 class="card-title en" style="display: none;">Patatas Bravas</h3>
+							<p class="card-text es">Patatas fritas cubiertas con salsa brava y alioli.</p>
+							<p class="card-text en" style="display: none;">Fried potatoes topped with spicy sauce and
+								aioli.
+							</p>
+							<a href="#" class="btn btn-danger es mt-2">Leer más</a>
+							<a href="#" class="btn btn-danger en mt-2" style="display: none;">Read more</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col">
+					<div class="card h-100">
+						<img src="img/entrantes/alitasPollo.jpg" class="card-img-top" alt="Alitas de Pollo">
+						<div class="card-body">
+							<h3 class="card-title es">Alitas de Pollo</h3>
+							<h3 class="card-title en" style="display: none;">Chicken Wings</h3>
+							<p class="card-text es">Alitas de pollo marinadas, fritas y servidas con salsa BBQ.</p>
+							<p class="card-text en" style="display: none;">Marinated chicken wings, fried and served with
+								BBQ
+								sauce.</p>
+							<a href="#" class="btn btn-danger es mt-2">Leer más</a>
+							<a href="#" class="btn btn-danger en mt-2" style="display: none;">Read more</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col">
+					<div class="card h-100">
+						<img src="img/entrantes/nachos.jpg" class="card-img-top" alt="Nachos">
+						<div class="card-body">
+							<h3 class="card-title es">Nachos</h3>
+							<h3 class="card-title en" style="display: none;">Nachos</h3>
+							<p class="card-text es">Tortilla chips con queso fundido, guacamole y jalapeños.</p>
+							<p class="card-text en" style="display: none;">Tortilla chips with melted cheese, guacamole,
+								and
+								jalapeños.</p>
+							<a href="#" class="btn btn-danger es mt-2">Leer más</a>
+							<a href="#" class="btn btn-danger en mt-2" style="display: none;">Read more</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col">
+					<div class="card h-100">
+						<img src="img/entrantes/croqueta.jpg" class="card-img-top" alt="Croquetas de Jamón">
+						<div class="card-body">
+							<h3 class="card-title es">Croquetas</h3>
+							<h3 class="card-title en" style="display: none;">Ham Croquettes</h3>
+							<p class="card-text es">Deliciosas croquetas caseras de jamón ibérico.</p>
+							<p class="card-text en" style="display: none;">Homemade croquettes with Iberian ham.</p>
+							<a href="#" class="btn btn-danger es mt-2">Leer más</a>
+							<a href="#" class="btn btn-danger en mt-2" style="display: none;">Read more</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col">
+					<div class="card h-100">
+						<img src="img/entrantes/chipirones.jpg" class="card-img-top" alt="Chipirones Fritos">
+						<div class="card-body">
+							<h3 class="card-title es">Chipirones Fritos</h3>
+							<h3 class="card-title en" style="display: none;">Fried Squids</h3>
+							<p class="card-text es">Calamares fritos crujientes, servidos con limón.</p>
+							<p class="card-text en" style="display: none;">Crispy fried squids, served with lemon.</p>
+							<a href="#" class="btn btn-danger es mt-2">Leer más</a>
+							<a href="#" class="btn btn-danger en mt-2" style="display: none;">Read more</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col">
+					<div class="card h-100">
+						<img src="img/entrantes/gambasAjillo.jpg" class="card-img-top" alt="Gambas al Ajillo">
+						<div class="card-body">
+							<h3 class="card-title es">Gambas al Ajillo</h3>
+							<h3 class="card-title en" style="display: none;">Garlic Prawns</h3>
+							<p class="card-text es">Gambas salteadas en aceite de oliva con ajo y guindilla.</p>
+							<p class="card-text en" style="display: none;">Prawns sautéed in olive oil with garlic and
+								chili.
+							</p>
+							<a href="#" class="btn btn-danger es mt-2">Leer más</a>
+							<a href="#" class="btn btn-danger en mt-2" style="display: none;">Read more</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col">
+					<div class="card h-100">
+						<img src="img/entrantes/bruschetta.jpg" class="card-img-top" alt="Bruschetta">
+						<div class="card-body">
+							<h3 class="card-title es">Bruschetta</h3>
+							<h3 class="card-title en" style="display: none;">Bruschetta</h3>
+							<p class="card-text es">Pan tostado con tomate, albahaca y aceite de oliva.</p>
+							<p class="card-text en" style="display: none;">Toasted bread with tomato, basil, and olive
+								oil.</p>
+							<a href="#" class="btn btn-danger es mt-2">Leer más</a>
+							<a href="#" class="btn btn-danger en mt-2" style="display: none;">Read more</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col">
+					<div class="card h-100">
+						<img src="img/entrantes/tortilla.jpg" class="card-img-top" alt="Tortilla Española">
+						<div class="card-body">
+							<h3 class="card-title es">Tortilla Española</h3>
+							<h3 class="card-title en" style="display: none;">Spanish Omelette</h3>
+							<p class="card-text es">Tortilla de patatas con cebolla, servida en porciones.</p>
+							<p class="card-text en" style="display: none;">Potato omelette with onion, served in slices.
+							</p>
+							<a href="#" class="btn btn-danger es mt-2">Leer más</a>
+							<a href="#" class="btn btn-danger en mt-2" style="display: none;">Read more</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="galeria" class="py-5">
+		<div class="container px-4">
+			<h2 class="text-center mb-5">Nuestra Galería</h2>
+			<div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+				<div class="col">
+					<div class="gallery-item-wrapper">
+						<div class="gallery-item">
+							<img src="img/entrantes/patabaBrava.jpg" alt="Patatas Bravas" onclick="window.open(this.src)">
+						</div>
+					</div>
+				</div>
+				<div class="col mb-4">
+					<div class="gallery-item-wrapper">
+						<div class="gallery-item">
+							<img src="img/entrantes/alitasPollo.jpg" class="img-fluid" alt="Alitas de Pollo"
+								onclick="window.open(this.src)">
+						</div>
+					</div>
+				</div>
+				<div class="col mb-4">
+					<div class="gallery-item-wrapper">
+						<div class="gallery-item">
+							<img src="img/entrantes/nachos.jpg" class="img-fluid" alt="Nachos" onclick="window.open(this.src)">
+						</div>
+					</div>
+				</div>
+				<div class="col mb-4">
+					<div class="gallery-item-wrapper">
+						<div class="gallery-item">
+							<img src="img/hamburguesas/hambClasica.jpg" class="img-fluid" alt="Hamburguesa Clásica"
+								onclick="window.open(this.src)">
+						</div>
+					</div>
+				</div>
+				<div class="col mb-4">
+					<div class="gallery-item-wrapper">
+						<div class="gallery-item">
+							<img src="img/hamburguesas/hambBBQ.jpg" class="img-fluid" alt="Hamburguesa BBQ"
+								onclick="window.open(this.src)">
+						</div>
+					</div>
+				</div>
+				<div class="col mb-4">
+					<div class="gallery-item-wrapper">
+						<div class="gallery-item">
+							<img src="img/hamburguesas/hambVegana.jpg" class="img-fluid" alt="Hamburguesa Vegana"
+								onclick="window.open(this.src)">
+						</div>
+					</div>
+				</div>
+				<div class="col mb-4">
+					<div class="gallery-item-wrapper">
+						<div class="gallery-item">
+							<img src="img/bocadillos/bocHamon.jpg" class="img-fluid" alt="Bocadillo de Jamón"
+								onclick="window.open(this.src)">
+						</div>
+					</div>
+				</div>
+				<div class="col mb-4">
+					<div class="gallery-item-wrapper">
+						<div class="gallery-item">
+							<img src="img/bocadillos/bocQueso.jpg" class="img-fluid" alt="Bocadillo de Queso"
+								onclick="window.open(this.src)">
+						</div>
+					</div>
+				</div>
+				<div class="col mb-4">
+					<div class="gallery-item-wrapper">
+						<div class="gallery-item">
+							<img src="img/bocadillos/bocTortilla.jpg" class="img-fluid" alt="Bocadillo de Tortilla"
+								onclick="window.open(this.src)">
+						</div>
+					</div>
+				</div>
+				<div class="col mb-4">
+					<div class="gallery-item-wrapper">
+						<div class="gallery-item">
+							<img src="img/postres/flan.jpg" class="img-fluid" alt="Flan" onclick="window.open(this.src)">
+						</div>
+					</div>
+				</div>
+				<div class="col mb-4">
+					<div class="gallery-item-wrapper">
+						<div class="gallery-item">
+							<img src="img/postres/tarta.jpg" class="img-fluid" alt="Tarta" onclick="window.open(this.src)">
+						</div>
+					</div>
+				</div>
+				<div class="col mb-4">
+					<div class="gallery-item-wrapper">
+						<div class="gallery-item">
+							<img src="img/postres/chocolate.jpg" class="img-fluid" alt="Coulant"
+								onclick="window.open(this.src)">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="contacto" class="fullscreen-section">
+		<div class="section-container">
+			<h2 class="es">Contacto</h2>
+			<h2 class="en" style="display: none;">Contact</h2>
+
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-4">
+					<img src="img/logo.svg" alt="Logo MazaBurguer" class="contact-logo mb-3">
+					<h3 class="mb-4">MazaBurguer S.L.</h3>
+					<div class="contacto-info">
+						<p><i class="bi bi-geo-alt-fill"></i> Calle Ejemplo, 123, Mazagón</p>
+						<p><i class="bi bi-telephone-fill"></i> 123 456 789</p>
+						<p><i class="bi bi-envelope-fill"></i> info@mazaburguer.com</p>
+						<p><i class="bi bi-clock-fill"></i>
+							<span class="es">Lunes a Domingo: 12:00 - 23:00</span>
+							<span class="en d-none">Monday to Sunday: 12:00 - 23:00</span>
+						</p>
+					</div>
+					<div class="social-links mt-4">
+						<a href="https://facebook.com/mazaburguer" target="_blank" class="me-3">
+							<i class="bi bi-facebook"></i>
+						</a>
+						<a href="https://instagram.com/mazaburguer" target="_blank" class="me-3">
+							<i class="bi bi-instagram"></i>
+						</a>
+						<a href="https://twitter.com/mazaburguer" target="_blank">
+							<i class="bi bi-twitter"></i>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<iframe src="map.html" class="contact-map"></iframe>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="registro" class="py-5">
+		<div class="container">
+			<h2 class="text-center mb-4 es">Registro de Usuario</h2>
+			<h2 class="text-center mb-4 en" style="display: none;">User Registration</h2>
+
+			<div class="row justify-content-center">
+				<div class="col-md-8">
+					<form class="registration-form needs-validation" novalidate>
+						<div class="row mb-3">
+							<label for="nombre" class="col-sm-3 col-form-label es">Nombre</label>
+							<label for="nombre" class="col-sm-3 col-form-label en" style="display: none;">Name</label>
+							<div class="col-sm-9">
+								<div class="input-group">
+									<span class="input-group-text"><i class="bi bi-person"></i></span>
+									<input type="text" class="form-control" id="nombre" required>
+								</div>
+							</div>
+						</div>
+
+						<div class="row mb-3">
+							<label for="email" class="col-sm-3 col-form-label">Email</label>
+							<div class="col-sm-9">
+								<div class="input-group">
+									<span class="input-group-text"><i class="bi bi-envelope"></i></span>
+									<input type="email" class="form-control" id="email" required>
+								</div>
+							</div>
+						</div>
+
+						<div class="row mb-3">
+							<label for="fechaNacimiento" class="col-sm-3 col-form-label es">Fecha de Nacimiento</label>
+							<label for="fechaNacimiento" class="col-sm-3 col-form-label en" style="display: none;">Birth
+								Date</label>
+							<div class="col-sm-9">
+								<div class="input-group">
+									<span class="input-group-text"><i class="bi bi-calendar"></i></span>
+									<input type="date" class="form-control" id="fechaNacimiento" required>
+								</div>
+							</div>
+						</div>
+
+						<div class="row mb-3">
+							<label for="telefono" class="col-sm-3 col-form-label es">Teléfono</label>
+							<label for="telefono" class="col-sm-3 col-form-label en" style="display: none;">Phone</label>
+							<div class="col-sm-9">
+								<div class="input-group">
+									<select class="form-select" style="max-width: 150px;" id="codigoPais">
+										<option value="+34">🇪🇸 +34</option>
+										<option value="+44">🇬🇧 +44</option>
+										<option value="+1">🇺🇸 +1</option>
+									</select>
+									<span class="input-group-text"><i class="bi bi-phone"></i></span>
+									<input type="tel" class="form-control" id="telefono" required>
+								</div>
+							</div>
+						</div>
+
+						<div class="row mb-3">
+							<div class="col-sm-9 offset-sm-3">
+								<div class="form-check d-flex align-items-center gap-2">
+									<input class="form-check-input mt-0" type="checkbox" id="aceptarTerminos" required>
+									<label class="form-check-label es" for="aceptarTerminos">
+										Acepto los términos y condiciones
+									</label>
+									<label class="form-check-label en" for="aceptarTerminos" style="display: none;">
+										I accept the terms and conditions
+									</label>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-12 text-center">
+								<button type="submit" class="btn btn-primary es">Registrarse</button>
+								<button type="submit" class="btn btn-primary en" style="display: none;">Register</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="py-4">
+		<div class="container text-center">
+			<p class="es">&copy; 2024 MazaBurguers. Todos los derechos reservados.</p>
+			<p class="en" style="display: none;">&copy; 2024 MazaBurguers. All rights reserved.</p>
+		</div>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
+	<script src="scripts.js"></script>
+</body>
+
+</html>
