@@ -1139,11 +1139,11 @@ header .container-fluid {
 .gallery-item img {
 	width: 100%;
 	height: 100%;
-	object-fit: contain;
+	object-fit: cover;
 	/* змінено на contain для збереження натуральних пропорцій */
-	background-color: var(--light);
+	background-color: transparent;
 	/* фон для пустих частин при збереженні пропорцій */
-	padding: 0.5rem;
+	padding: 0;
 	/* відступ від країв для кращого вигляду */
 }
 
@@ -1349,3 +1349,92 @@ header .container-fluid {
 		margin: 0 auto;
 	}
 }
+
+/* Estilos para los paneles de la galería */
+.gallery-item-wrapper {
+	position: relative;
+	width: 100%;
+	padding-bottom: 75%;
+	overflow: hidden;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	margin-bottom: 1rem;
+}
+
+.gallery-panel {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 10px;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	transition: transform 0.3s ease;
+}
+
+.gallery-item:hover .gallery-panel {
+	transform: translateY(-5px);
+}
+
+/* Colores para los paneles */
+.panel-color-1 {
+	background-color: rgba(178, 34, 34, 0.8);
+}
+
+/* Rojo */
+.panel-color-2 {
+	background-color: rgba(255, 195, 0, 0.8);
+}
+
+/* Amarillo */
+.panel-color-3 {
+	background-color: rgba(64, 31, 20, 0.8);
+}
+
+/* Marrón */
+.panel-color-4 {
+	background-color: rgba(46, 139, 87, 0.8);
+}
+
+/* Verde */
+.panel-color-5 {
+	background-color: rgba(25, 25, 112, 0.8);
+}
+
+/* Azul marino */
+.panel-color-6 {
+	background-color: rgba(148, 0, 211, 0.8);
+}
+
+/* Violeta */
+.panel-color-7 {
+	background-color: rgba(210, 105, 30, 0.8);
+}
+
+/* Chocolate */
+.panel-color-8 {
+	background-color: rgba(47, 79, 79, 0.8);
+}
+
+/* Gris verdoso */
+.panel-color-9 {
+	background-color: rgba(184, 134, 11, 0.8);
+}
+
+/* Dorado */
+.panel-color-10 {
+	background-color: rgba(139, 69, 19, 0.8);
+}
+
+/* Café */
+.panel-color-11 {
+	background-color: rgba(112, 128, 144, 0.8);
+}
+
+/* Gris pizarra */
+.panel-color-12 {
+	background-color: rgba(165, 42, 42, 0.8);
+}
+
+/* Marrón oscuro */
